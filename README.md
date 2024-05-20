@@ -3,34 +3,34 @@
 #Here is the code
 
 
-import customtkinter
-import webbrowser
-import os
-import subprocess
+    import customtkinter
+    import webbrowser
+    import os
+    import subprocess
 
-customtkinter.set_appearance_mode("dark")
-customtkinter.set_default_color_theme("blue")
+    customtkinter.set_appearance_mode("dark")
+    customtkinter.set_default_color_theme("blue")
 
 
-valid_username="Admin"
-valid_password="Admin"
+    valid_username="Admin"
+    valid_password="Admin"
 
-def open_webpage():
+    def open_webpage():
     url = "https://seb.collegial.com"
     webbrowser.open_new(url)
 
 
-def open_webpage1():
+    def open_webpage1():
     url = "https://www.google.co.in?"
     webbrowser.open_new(url)
-
-def open_app(): 
+ 
+    def open_app(): 
     import subprocess 
     subprocess.Popen(["open", "/Applications/netflix.app"])
 
 
 
-def login():
+    def login():
     entered_username = text.get()
     entered_password = text2.get()
     if entered_username == valid_username and entered_password == valid_password:
@@ -74,30 +74,30 @@ def login():
         Button3.pack(pady=12, padx=10)
 
 
-def retry():
+    def retry():
    
     window.deiconify() 
     
     
           
 
-window = customtkinter.CTk()
-window.geometry("500x300")
-window.title("EVERYDAY USE APP")
+    window = customtkinter.CTk()
+    window.geometry("500x300")
+    window.title("EVERYDAY USE APP")
 
-frame = customtkinter.CTkFrame(master=window)
-frame.pack(pady=20, padx=60, fill="both", expand=True)
+    frame = customtkinter.CTkFrame(master=window)
+    frame.pack(pady=20, padx=60, fill="both", expand=True)
 
-label = customtkinter.CTkLabel(master = frame, text ="Login System")
-label.pack(pady =12, padx= 10)
+    label = customtkinter.CTkLabel(master = frame, text ="Login System")
+    label.pack(pady =12, padx= 10)
 
-text = customtkinter.CTkEntry(master = frame, placeholder_text="Username")
-text.pack(pady =12, padx= 10)
+    text = customtkinter.CTkEntry(master = frame, placeholder_text="Username")
+    text.pack(pady =12, padx= 10)
 
-text2 =customtkinter.CTkEntry(master =frame, placeholder_text="password", show ="*")
-text2.pack(pady =12, padx= 10)
+    text2 =customtkinter.CTkEntry(master =frame, placeholder_text="password", show ="*")
+    text2.pack(pady =12, padx= 10)
 
-button = customtkinter.CTkButton(master =frame, text ="login", command=login)
-button.pack(pady=12, padx =10)
+    button = customtkinter.CTkButton(master =frame, text ="login", command=login)
+    button.pack(pady=12, padx =10)
            
-window.mainloop()
+    window.mainloop()
