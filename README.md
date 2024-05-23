@@ -1,6 +1,7 @@
+<img width="612" alt="Screenshot 2024-05-23 at 12 51 32 PM" src="https://github.com/Piyushb630/Login/assets/92310553/78056001-404c-40c2-9be8-98b4137d9783">
 
-<img width="568" alt="Screenshot 2024-05-23 at 12 50 30 PM" src="https://github.com/Piyushb630/Login/assets/92310553/db80de6a-ce90-4112-95c9-d9c0f5cc91a5">
-<img width="612" alt="Screenshot 2024-05-23 at 12 52 06 PM" src="https://github.com/Piyushb630/Login/assets/92310553/212ee701-9e28-4136-8b0b-0e4c4b9b146e">
+<img width="612" alt="Screenshot 2024-05-23 at 12 51 32 PM" src="https://github.com/Piyushb630/Login/assets/92310553/4ab423ae-9174-4e78-8a06-df449a3258cb">
+
 <img width="612" alt="Screenshot 2024-05-23 at 12 51 32 PM" src="https://github.com/Piyushb630/Login/assets/92310553/987582c1-b386-4614-b06c-d8ab529c0cba">
 
 
@@ -27,7 +28,7 @@
     valid_password="Admin"
 
     def open_webpage():
-    url = "https://seb.collegial.com"
+    url = "https://google.com"
     webbrowser.open_new(url)
 
 
@@ -54,19 +55,19 @@
         frame = customtkinter.CTkFrame(master =window1)
         frame.pack(pady=20, padx=60, fill ="both", expand=True)
 
-        button = customtkinter.CTkButton(master = frame, text = "SEBcampus", command = open_webpage)
+        button = customtkinter.CTkButton(master = frame, text = "link1", command = open_webpage)
         button.pack(pady=12, padx=10)
 
-        button1 = customtkinter.CTkButton(master = frame, text = "Checksheet", command= open_webpage1)
+        button1 = customtkinter.CTkButton(master = frame, text = "link2", command= open_webpage1)
         button1.pack(pady=12, padx=10)
 
-        button2 = customtkinter.CTkButton(master = frame, text = "Calypso", command = open_webpage1)
+        button2 = customtkinter.CTkButton(master = frame, text = "link3", command = open_webpage1)
         button2.pack(pady=12, padx = 10)
 
-        button3 = customtkinter.CTkButton(master = frame, text ="Swift Citrix", command = open_webpage1 )
+        button3 = customtkinter.CTkButton(master = frame, text ="Application1", command = open_webpage1 )
         button3.pack(pady=12, padx=10)
 
-        button4 = customtkinter.CTkButton(master = frame, text = "Work Instructions", command = open_webpage1)
+        button4 = customtkinter.CTkButton(master = frame, text = "Application2", command = open_webpage1)
         button4.pack(pady=12, padx=10)
         
 
